@@ -1,0 +1,46 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "master" branch
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # Runs a single command using the runners shell
+      - run: yarn
+      - run: yarn build
+      - run: yarn build
+      - name: Beanstalk Deploy
+        uses: einaregilsson/beanstalk-deploy@v20
+        with:
+          # AWS Access Key
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
+          # AWS Secret Key
+          aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
+          # AWS Region
+          region: ${{ secrets.AWS_REGION }}
+          # Beanstalk application name
+          application_name: ${{ secrets.AWS_APPLICATION_NAME }}
+          # Beanstalk environment name. If empty a version will be created but not deployed anywhere.
+          environment_name: ${{ secrets.AWS_ENVIRONMENT_NAME }}
+          # Version label for new Beanstalk version
+          version_label: 1
