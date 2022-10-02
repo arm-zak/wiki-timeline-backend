@@ -927,9 +927,9 @@ whatwg-url@^11.0.0:
     webidl-conversions "^7.0.0"
 
 wiki-timeline-common@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/wiki-timeline-common/-/wiki-timeline-common-1.0.2.tgz#a463b446ce8d809855582c8b34685b93b3c7310f"
-  integrity sha512-CLqNZQENlcw5iv8xlPYu8AQzf4g6Jw3ioVZgmtSSa2Z5jLmQruYDWHXB5xLPjnZhBzU+V6FViP5VGExeU85ROg==
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/wiki-timeline-common/-/wiki-timeline-common-1.0.4.tgz#12522b2f753857fac32225eadcbb578c34406a4b"
+  integrity sha512-r/QRof2Dk2cZX0AhO6aU5WAIuhYSlwvwLQHqB5tYmfgDJEsZOWjDHo52d6dsxSuNC4yNFhV+6KBWCr+jpQWW0Q==
 
 ws@~8.2.3:
   version "8.2.3"
