@@ -3,7 +3,7 @@
   "scripts": {
     "build": "npx tsc -b",
     "start": "node dist/server.js",
-    "dev": "tsc-watch --onSuccess \"node ./dist/server.js\"",
+    "dev": "npx tsc-watch --onSuccess \"node ./dist/server.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
