@@ -29,7 +29,7 @@ jobs:
       - run: yarn
       - run: yarn build
       - run: yarn build
-      - run: zip -r deploy.zip "dist" "package.json"
+      - run: zip -r deploy.zip "dist" "node_modules" "package.json"
       - name: Beanstalk Deploy
         uses: einaregilsson/beanstalk-deploy@v20
         with:
