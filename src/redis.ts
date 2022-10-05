@@ -9,7 +9,7 @@ const redisPort = process.env.REDIS_PORT
 export let redisClient : RedisClientType
 export async function initRedisConnnection() {
     redisClient = createClient({
-        url: `redis://${redisUser}:${redisPass}@${redisUrl}:${redisPort}`
+        url: `redis://${redisUrl}:${redisPort}`
     });
 
     await redisClient.connect()

@@ -926,10 +926,10 @@ whatwg-url@^11.0.0:
     tr46 "^3.0.0"
     webidl-conversions "^7.0.0"
 
-wiki-timeline-common@^1.0.2:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/wiki-timeline-common/-/wiki-timeline-common-1.0.4.tgz#12522b2f753857fac32225eadcbb578c34406a4b"
-  integrity sha512-r/QRof2Dk2cZX0AhO6aU5WAIuhYSlwvwLQHqB5tYmfgDJEsZOWjDHo52d6dsxSuNC4yNFhV+6KBWCr+jpQWW0Q==
+wiki-timeline-common@latest:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/wiki-timeline-common/-/wiki-timeline-common-1.0.5.tgz#741b8dc8354ccc2d7d5e4a629a112c4911991de4"
+  integrity sha512-d+9ITAv1RigVXpE9UKE5kmMyf6wpxSCYW2L/Nyh8YKNWKEFDYzf7dJg4x88tUPViKFtHTh9BDRFW4D89LCch/g==
 
 ws@~8.2.3:
   version "8.2.3"

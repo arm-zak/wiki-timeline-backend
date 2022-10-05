@@ -1,5 +1,6 @@
-import { EventQuestion as EventQuestionInterface, ErrorCode, EventQuestionSchema } from "wiki-timeline-common";
+import { EventQuestion as EventQuestionInterface, ErrorCode } from "wiki-timeline-common";
 import mongoose from "mongoose";
+import { EventQuestionSchema } from "wiki-timeline-common/dist/models/EventQuestion.js";
 
 const text =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tristique sapien eget nisl feugiat tempor. Quisque sodales facilisis tortor, sed tristique neque venenatis at. Pellentesque quis neque aliquet, vulputate lorem sit amet, finibus mauris. Etiam faucibus mollis augue, et rhoncus purus laoreet at. Sed ultrices nulla at odio bibendum accumsan. Aenean euismod consectetur rutrum. Aliquam facilisis, quam sit amet ornare aliquet, lorem diam aliquam magna, ut consectetur lacus lectus non urna. Nunc pretium ante lacus, ac gravida lectus dapibus et. Pellentesque rhoncus placerat lacus vitae ultrices. Aenean blandit, purus ornare faucibus porttitor, leo risus feugiat augue, vitae imperdiet massa nisl a ante. Praesent nulla enim, fermentum ac erat non, tristique iaculis elit. Suspendisse auctor, enim non hendrerit tincidunt, dolor velit malesuada libero, at bibendum diam urna vitae massa. Pellentesque interdum lorem elit, eget pharetra metus molestie quis. Fusce laoreet, mi vel ultricies cursus, erat massa bibendum metus, accumsan pulvinar risus est nec lectus. Nullam auctor facilisis consectetur.";
