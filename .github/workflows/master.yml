@@ -45,5 +45,6 @@ jobs:
           environment_name: ${{ secrets.AWS_ENVIRONMENT_NAME }}
           # Version label for new Beanstalk version
           version_label: 1.0.0
+          use_existing_version_if_available: true
           # Zip file with the version to deploy. If skipped the action will deploy existing version.
           deployment_package: deploy.zip
