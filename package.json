@@ -1,6 +1,4 @@
 {
-  "name": "wiki-timeline-backend",
-  "version": "1.0.0",
   "main": "dist/server.js",
   "scripts": {
     "build": "npx tsc -b",
