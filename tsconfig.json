@@ -1,11 +1,14 @@
 {
   "compilerOptions": {
+    "esModuleInterop": true,
     "target": "ESNext",
     "moduleResolution": "NodeNext",
     "module": "ESNext",
-    "outDir": "dist",                                   /* Specify an output folder for all emitted files. */
+    "outDir": "dist",
     "rootDir": "src",
+    "sourceMap": true
   },
-  "include": ["src/**/*"],
-  "exclude": ["dist/**/*"]
+  "ts-node": {
+    "esm": true
+  }
 }
